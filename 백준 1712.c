@@ -3,24 +3,15 @@
 int main(void) {
 
 	int  A, B, C;
-	int sum = 0, add = 0, N = 0;
+	int gain;
 
 	scanf_s("%d %d %d", &A, &B, &C);
 
+	gain = A / (C - B) + 1;
+
 	if (B >= C)
 		printf("-1");
-	else {
-		while (1) {
+	else
+		printf("%d", gain);
 
-			sum = A + (B * N);
-			add = C * N;
-
-			if (sum < add)
-				break;
-
-
-			N++;
-		}
-		printf("%d", N);
-	}
 }
