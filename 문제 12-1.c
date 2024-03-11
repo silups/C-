@@ -9,6 +9,8 @@
 	(*ptr1)++;
 	(*ptr2)++;
 	printf("%d \n", num);
+ 	printf("%p\n", ptr1);
+	printf("%zd", sizeof(ptr1));
 }*/
 
 int main(void) {
